@@ -3,6 +3,7 @@ OOS-EVAL:
   The original in-scope labels are used while training LSTM-FC network.
   KLOOS and baseline methods are tested using data taken from https://github.com/clinc/oos-eval/blob/master/data/binary_wiki_aug.json
   All datasets are converted to csv format.
+  The OOS instances taken from https://github.com/clinc/oos-eval/blob/master/data/binary_wiki_aug.json are used to augment the other datasets.
 
 HAR-aug:
   Taken from https://github.com/xliuhw/NLU-Evaluation-Data/blob/master/AnnotatedData/NLU-Data-Home-Domain-Annotated-All.csv

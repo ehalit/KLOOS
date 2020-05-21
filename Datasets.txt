@@ -1,0 +1,25 @@
+OOS-EVAL:
+  In-scope data is taken from https://github.com/clinc/oos-eval/blob/master/data/data_full.json
+  The original in-scope labels are used while training LSTM-FC network.
+  KLOOS and baseline methods are tested using data taken from https://github.com/clinc/oos-eval/blob/master/data/binary_wiki_aug.json
+  All datasets are converted to csv format.
+
+HAR-aug:
+  Taken from https://github.com/xliuhw/NLU-Evaluation-Data/blob/master/AnnotatedData/NLU-Data-Home-Domain-Annotated-All.csv
+  Only the utterances and labels are used to construct a csv file.
+  Removed instances labeled as "question"
+  The original labels are used while training LSTM-FC network.
+  Labels are replaced by "in-scope" label while evaluating the baseline methods.
+  Augmented with Wikipedia sentences labeled as "oos" taken from https://github.com/clinc/oos-eval/blob/master/data/binary_wiki_aug.json
+
+SNIPS-aug:
+  Taken from https://github.com/90217/joint-intent-classification-and-slot-filling-based-on-BERT/tree/master/data/snips
+  Training and test data are merged into a single csv file.
+  In-scope labels are taken from corresponding files.
+  The original labels are used while training LSTM-FC network.
+  Labels are replaced by "in-scope" label while evaluating the baseline methods.
+  Augmented with Wikipedia sentences labeled as "oos" taken from https://github.com/clinc/oos-eval/blob/master/data/binary_wiki_aug.json
+
+In the experiments with all the datasets, 10-fold leave-one-out cross-validation is applied.
+At every fold, the training sets contain 90% of the data and the excluded data is different at every fold.
+At every fold, the test sets contain 10% of the data which are different from each other.

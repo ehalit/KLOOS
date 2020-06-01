@@ -1,0 +1,278 @@
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_Logistic
+t = 8.3888, df = 9, p-value = 1.512e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1533707 0.2666293
+sample estimates:
+mean of the differences 
+                   0.21 
+
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_NB
+t = 12.07, df = 9, p-value = 7.327e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.3843515 0.5616485
+sample estimates:
+mean of the differences 
+                  0.473 
+
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_SVM
+t = 2.2072, df = 9, p-value = 0.0547
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.001170906  0.095170906
+sample estimates:
+mean of the differences 
+                  0.047 
+
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_InferSent
+t = 4.6034, df = 9, p-value = 0.001284
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1912279 0.5607721
+sample estimates:
+mean of the differences 
+                  0.376 
+
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_FastText
+t = 3.6233, df = 9, p-value = 0.005543
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.05559858 0.24040142
+sample estimates:
+mean of the differences 
+                  0.148 
+
+        Paired t-test
+
+data:  recall_KLOOSLR and recall_BERT
+t = 13.65, df = 9, p-value = 2.552e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.3003393 0.4196607
+sample estimates:
+mean of the differences 
+                   0.36 
+
+
+-------------------------------------------------------------------------------
+        Paired t-test
+
+data:  precision_KLOOSLR and precision_Logistic
+t = -12.217, df = 9, p-value = 6.608e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3016411 -0.2073884
+sample estimates:
+mean of the differences 
+             -0.2545148 
+
+        Paired t-test
+
+data:  precision_KLOOSLR and precision_NB
+t = -21.323, df = 9, p-value = 5.157e-09
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4711344 -0.3807581
+sample estimates:
+mean of the differences 
+             -0.4259462 
+
+        Paired t-test
+
+data:  precision_KLOOSLR and precision_SVM
+t = -2.5009, df = 9, p-value = 0.03381
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.069530615 -0.003485669
+sample estimates:
+mean of the differences 
+            -0.03650814 
+
+        Paired t-test
+
+data:  precision_KLOOSLR and precision_InferSent
+t = -19.707, df = 9, p-value = 1.034e-08
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3731922 -0.2963385
+sample estimates:
+mean of the differences 
+             -0.3347654 
+
+        Paired t-test
+
+data:  precision_KLOOSLR and precision_FastText
+t = -22.41, df = 9, p-value = 3.321e-09
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4563459 -0.3726626
+sample estimates:
+mean of the differences 
+             -0.4145042 
+
+-------------------------------------------------------------------------------
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_Logistic
+t = -3.656, df = 9, p-value = 0.005268
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.14239781 -0.03353831
+sample estimates:
+mean of the differences 
+            -0.08796806 
+
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_NB
+t = 1.4942, df = 9, p-value = 0.1693
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.02981506  0.14583687
+sample estimates:
+mean of the differences 
+              0.0580109 
+
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_SVM
+t = -1.151, df = 9, p-value = 0.2794
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.05621890  0.01830277
+sample estimates:
+mean of the differences 
+            -0.01895806 
+
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_InferSent
+t = 0.56197, df = 9, p-value = 0.5879
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1207644  0.2005981
+sample estimates:
+mean of the differences 
+             0.03991683 
+
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_FastText
+t = -7.9516, df = 9, p-value = 2.323e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2407548 -0.1341094
+sample estimates:
+mean of the differences 
+             -0.1874321 
+
+        Paired t-test
+
+data:  f1_KLOOSLR and f1_BERT
+t = -0.87311, df = 9, p-value = 0.4053
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.08555847  0.03790568
+sample estimates:
+mean of the differences 
+            -0.02382639 
+
+        Paired t-test
+
+data:  f1_FastText and f1_BERT
+t = 4.9064, df = 9, p-value = 0.0008402
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.08817331 0.23903813
+sample estimates:
+mean of the differences 
+              0.1636057 
+
+        Paired t-test
+
+data:  f1_FastText and f1_KLOOSLR
+t = 7.9516, df = 9, p-value = 2.323e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1341094 0.2407548
+sample estimates:
+mean of the differences 
+              0.1874321 
+
+        Paired t-test
+
+data:  f1_FastText and f1_KLOOSNB
+t = 14.909, df = 9, p-value = 1.189e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.2670272 0.3625528
+sample estimates:
+mean of the differences 
+                0.31479 
+
+        Paired t-test
+
+data:  f1_FastText and f1_KLOOSSVM
+t = 4.8578, df = 9, p-value = 0.0008986
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.07520876 0.20630147
+sample estimates:
+mean of the differences 
+              0.1407551 
+
+        Paired t-test
+
+data:  f1_FastText and f1_InferSent
+t = 4.3529, df = 9, p-value = 0.001843
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1091973 0.3455006
+sample estimates:
+mean of the differences 
+              0.2273489 
+
+        Paired t-test
+
+data:  f1_FastText and f1_Logistic
+t = 3.5894, df = 9, p-value = 0.005844
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.03677833 0.16214978
+sample estimates:
+mean of the differences 
+             0.09946405 
+
+        Paired t-test
+
+data:  f1_FastText and f1_NB
+t = 5.8018, df = 9, p-value = 0.0002589
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1497441 0.3411419
+sample estimates:
+mean of the differences 
+               0.245443 
+
+        Paired t-test
+
+data:  f1_FastText and f1_SVM
+t = 6.3692, df = 9, p-value = 0.0001299
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1086373 0.2283108
+sample estimates:
+mean of the differences 
+              0.1684741 
+

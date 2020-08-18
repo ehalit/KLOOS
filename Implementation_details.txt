@@ -1,1 +1,10 @@
+Using in-scope labeled data, a one directional LSTM of hidden size 128 followed by a single linear layer of shape (hidden size, number of intents) with log softmax activation function is trained. 
+The input of LSTM is FastText word embeddings. 
+The loss function is negative log-likelihood loss and SGD optimizer of pytorch with learning rate 0.1 is used.
+Batch size is 1 due to varying size of input sentences.
 
+The model is trained for 5 epochs but the hyperparameters in this in-scope intent classification task are not optimized. 
+There may be room for improvement in the in-scope classification performance (around 0.85 accuracy) because it is easily beaten by Tfidf based machine learning classifiers. 
+Since the aim of the project is to detect out-of-scope instances, the in-scope classification performance is seen satisfactory.
+
+After the model is fully trained, both the in-scope and out-of-scope data is given to the model.

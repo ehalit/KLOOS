@@ -19,8 +19,8 @@ The following algorithm is used for KL Divergence calculation:
 def KL(p, q):
   p = numpy.log(scipy.special.softmax(p))
   q = numpy.log(scipy.special.softmax(q))
-  res = np.sum(p * np.log(p/q)) # Formula for KL Divergence
-  if np.isnan(res):
+  res = numpy.sum(p * numpy.log(p/q)) # Formula for KL Divergence
+  if numpy.isnan(res):
     return 0.0
   else:
     return res

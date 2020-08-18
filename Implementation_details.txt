@@ -11,14 +11,12 @@ After the model is fully trained, both the in-scope and out-of-scope data is giv
 The output of the model is a tensor of shape (number of intents, length of the sentence), call it (n, k).
 The KLOOS feature vector is obtained by calculating the KL Divergence between (n, 0) and (n, 1), (n, 1) and (n, 2) ... (n, k-1) and (n, k).
 These values are appended to construct the KLOOS vector.
-Since the output of the model is obtained by log softmax, it is not a proper probability distribution.
-Softmax generates proper distributions but it is observed to decrease the performance of OOS detection.
 
-The following algorithm is used for KL Divergence calculation:
+The following algorithm is used for KL Divergence calculation where p and q are outputs of the Linear layer (before log softmax activation):
 
 def KL(p, q):
-  p = numpy.log(scipy.special.softmax(p))
-  q = numpy.log(scipy.special.softmax(q))
+  p = scipy.special.softmax(p)
+  q = scipy.special.softmax(q)
   res = numpy.sum(p * numpy.log(p/q)) # Formula for KL Divergence
   if numpy.isnan(res):
     return 0.0

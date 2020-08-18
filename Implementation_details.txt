@@ -7,4 +7,22 @@ The model is trained for 5 epochs but the hyperparameters in this in-scope inten
 There may be room for improvement in the in-scope classification performance (around 0.85 accuracy) because it is easily beaten by Tfidf based machine learning classifiers. 
 Since the aim of the project is to detect out-of-scope instances, the in-scope classification performance is seen satisfactory.
 
-After the model is fully trained, both the in-scope and out-of-scope data is given to the model.
+After the model is fully trained, both the in-scope and out-of-scope data is given to the model in the evaluation mode with no gradient update.
+The output of the model is a tensor of shape (number of intents, length of the sentence), call it (n, k).
+The KLOOS feature vector is obtained by calculating the KL Divergence between (n, 0) and (n, 1), (n, 1) and (n, 2) ... (n, k-1) and (n, k).
+Since the output of the model is obtained by log softmax, it is not a proper probability distribution.
+Softmax generates proper distributions but it is observed to decrease the performance of OOS detection.
+
+The following algorithm is used for KL Divergence calculation:
+
+def KL(p, q):
+  p = numpy.log(scipy.special.softmax(p))
+  q = numpy.log(scipy.special.softmax(q))
+  res = np.sum(p * np.log(p/q)) # Formula for KL Divergence
+  if np.isnan(res):
+    return 0.0
+  else:
+    return res
+
+The resultant KLOOS feature vectors are padded with zeros to match the longest feature vector length.
+KLOOS vectors used for binary classification with Machine Learning classifiers as discussed in the paper.
